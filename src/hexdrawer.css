@@ -1,0 +1,81 @@
+
+.game-header button.btn-undo {
+    border: 2px solid #f44336;
+    border-radius: 4px;
+    background-color: rgb(255, 187, 187);
+    color: black;
+    padding: 5px 15px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    display: inline-block;
+    margin-left: 32px
+}
+
+.game-header button.btn-undo:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.game-header button.btn-color {
+    padding: 15px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    vertical-align: top;
+    opacity: 0.4;
+}
+
+.game-header button.btn-color:hover {
+    opacity: 1.0;
+}
+
+.game-header button.btn-color.selected {
+    border: 2px solid black;
+    opacity: 1.0;
+}
+
+.game-header button.btn-color.red {
+    border: 2px solid red;
+    background-color: red;
+    color: black;
+}
+
+.game-header button.btn-color.green {
+    border: 2px solid green;
+    background-color: green;
+    color: black;
+}
+
+.game-header button.btn-color.blue {
+    border: 2px solid blue;
+    background-color: blue;
+    color: black;
+}
+
+.game-header button.btn-color.yellow {
+    border: 2px solid yellow;
+    background-color: yellow;
+    color: black;
+}
+
+.game-header button.btn-color.brown {
+    border: 2px solid saddlebrown;
+    background-color: saddlebrown;
+    color: black;
+}
+
+.game-header button.btn-color.black {
+    border: 2px solid black;
+    background-color: black;
+    color: black;
+}
+
+.game-header button.btn-color.gray {
+    border: 2px solid lightgray;
+    background-color: lightgray;
+    color: black;
+}
