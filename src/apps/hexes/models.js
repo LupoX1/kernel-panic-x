@@ -147,13 +147,13 @@ class HexRenderer {
         ctx.lineWidth = this.renderOptions.lineWidth || 1
         ctx.strokeStyle = this.renderOptions.strokeStyle || 'rgba(192,192,192,1.0)'
         ctx.fillStyle = this.renderOptions.fillStyle || 'rgba(248,248,248,1.0)'
-        if (item.highlight) {
-            ctx.fillStyle = this.renderOptions.highlight || 'rgba(255,255,216,1.0)'
-        }
         if(item.selected){
             ctx.fillStyle = this.renderOptions.selected ||'rgba(255,255,255,1.0)'    
         }
-
+        if (item.highlight) {
+            ctx.fillStyle = this.renderOptions.highlight || 'rgba(255,255,216,1.0)'
+        }
+        
         ctx.beginPath()
         ctx.moveTo(corners[0].x, corners[0].y)
         ctx.lineTo(corners[1].x, corners[1].y)

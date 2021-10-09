@@ -42,7 +42,7 @@ h3 {
     margin : 0;
 }
 
-.btn-launch{
+button{
     border: 1px solid #474747;
     border-radius: 4px;
     background-color:#d6d6d6;
@@ -53,7 +53,6 @@ h3 {
     font-size: 16px;
     cursor: pointer;
     display: inline-block;
-    opacity: 0.8;
 }
 
 .btn-launch:hover {
