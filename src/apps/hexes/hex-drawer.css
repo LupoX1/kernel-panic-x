@@ -18,6 +18,20 @@
     cursor: not-allowed;
 }
 
+.game-header a.btn-save {
+    border: 2px solid #1fcf28;
+    border-radius: 4px;
+    background-color: #abeeae;
+    color: black;
+    padding: 5px 15px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    display: inline-block;
+    margin-left: 32px
+}
+
 .game-header button.btn-color {
     padding: 15px 15px;
     text-align: center;

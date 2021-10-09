@@ -1,10 +1,4 @@
 
-const resetMouse = (input) => {
-    input['click'] = false
-    input['mousedown'] = false
-    input['mouseup'] = false
-}
-
 const addListener = (container, name, callback) => {
     container.addEventListener(name, callback, false)
 }

@@ -1,4 +1,4 @@
-var log = object => {
+const log = object => {
     let element = document.querySelector('#debugContainer')
     element.innerHTML = JSON.stringify(object)
 }
@@ -17,3 +17,5 @@ const debugWindow = () => {
     debugContainer.style.backgroundColor = 'rgba(255, 128, 128, 0.9)'
     document.body.appendChild(debugContainer)
 }
+
+export { log, debugWindow }

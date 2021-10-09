@@ -1,5 +1,8 @@
+import '../index.css'
+
 import initialize from "./initializer.js"
 import InputHandler from './input.js'
+import { log, debugWindow } from './log.js'
 
 class Core {
 
@@ -28,7 +31,6 @@ class Core {
                 item.handleInput(this.input)
             }
         }
-        this.input.resetMouse()
     }
 
     update(t) {
@@ -114,7 +116,7 @@ class Core {
     }
 }
 
-const setup = () => {
+const getCore = () => {
     initialize()
 
     const canvas = document.createElement('canvas')
@@ -161,4 +163,23 @@ const setup = () => {
     return core
 }
 
-export default setup
+const buttonListener = (event) => {
+    let app = event.target.dataset.app
+
+    const engine = getCore()
+    
+    import('../apps/'+app+'.js').then(module=>{
+        module.default(engine)
+    }).catch(err => {
+        console.log(err)
+    })
+}
+
+const init = () => {
+    document.querySelectorAll('button.btn-launch').forEach(btn => {
+        btn.addEventListener('click', buttonListener)
+    })
+}
+
+export { Core, InputHandler }
+export default init
